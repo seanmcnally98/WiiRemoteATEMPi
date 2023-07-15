@@ -24,7 +24,7 @@ while True:
     paired_devices = get_paired_devices()
 
     # Check if target device is connected
-    if '00:17:AB:21:02:E9' in paired_devices and is_device_connected('00:17:AB:21:02:E9'):
+    if 'XX:XX:XX:XX:XX:XX' in paired_devices and is_device_connected('XX:XX:XX:XX:XX:XX'):
         # We did it!
         print("Found The Wii Remote!")
         process = subprocess.Popen(['/bin/bash', '/home/pi/startchataigne.sh'])
