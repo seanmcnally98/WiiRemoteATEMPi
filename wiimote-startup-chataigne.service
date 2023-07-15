@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Chataigne On WiiMote Connect Script
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/bt_list.py
+Type=simple
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
